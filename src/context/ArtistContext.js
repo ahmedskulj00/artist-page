@@ -5,7 +5,7 @@ import artistReducer from "../reducer/artistReducer";
 
 const ArtistContext = createContext(initialState);
 
-export const ArtistProvider = ({ childern }) => {
+export const ArtistProvider = ({ children }) => {
   const [state, dispatch] = useReducer(artistReducer, initialState);
 
   useEffect(() => {
@@ -38,7 +38,7 @@ export const ArtistProvider = ({ childern }) => {
     artists: state.artists,
   };
   return (
-    <ArtistContext.Provider value={value}>{childern}</ArtistContext.Provider>
+    <ArtistContext.Provider value={value}>{children}</ArtistContext.Provider>
   );
 };
 
