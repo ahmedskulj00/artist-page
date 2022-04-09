@@ -1,0 +1,28 @@
+.navbar-container {
+  width: 100vw;
+  height: 65px;
+  background-color: #000;
+}
+.navbar-inner-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  height: 65px;
+  width: 65px;
+}
+.search {
+  width: 28px;
+  height: 28px;
+}
+.burger-menu {
+  width: 28px;
+  height: 28px;
+}
+.navbar-right-side {
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
