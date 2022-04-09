@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "SuisseIntl-Black";
+  src: url(./assets/fonts/SuisseIntl-Black-WebM.woff);
+}
+@font-face {
+  font-family: "SuisseIntl-Bold";
+  src: url(./assets/fonts/SuisseIntl-Bold-WebM.woff);
+}
+@font-face {
+  font-family: "SuisseIntl-Light";
+  src: url(./assets/fonts/SuisseIntl-Light-WebM.woff);
+}
+@font-face {
+  font-family: "SuisseIntl-Medium";
+  src: url(./assets/fonts/SuisseIntl-Medium-WebM.woff);
+}
+@font-face {
+  font-family: "SuisseIntl-Regular";
+  src: url(./assets/fonts/SuisseIntl-Regular-WebM.woff);
+}
+@font-face {
+  font-family: "SuisseIntl-SemiBold";
+  src: url(./assets/fonts/SuisseIntl-SemiBold-WebM.woff);
+}
+@font-face {
+  font-family: "SuisseIntlMono-Bold";
+  src: url(./assets/fonts/SuisseIntlMono-Bold-WebS.woff);
+}
+@font-face {
+  font-family: "SuisseIntlMono-Regular";
+  src: url(./assets/fonts/SuisseIntlMono-Regular-WebS.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
