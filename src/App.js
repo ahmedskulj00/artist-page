@@ -1,11 +1,13 @@
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
-
+import { ArtistProvider } from "./context/ArtistContext";
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-    </div>
+    <ArtistProvider>
+      <div className="App">
+        <Navbar />
+      </div>
+    </ArtistProvider>
   );
 }
 

@@ -29,7 +29,7 @@ export const ArtistProvider = ({ children }) => {
       }
     };
 
-    getArtist();
+    getArtist("7c46c4ce-09c0-4f95-b4e1-84ae10bd24ab"); // leaving like this for now until I fix it later
     getArtists();
   }, []);
 

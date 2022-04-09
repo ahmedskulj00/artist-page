@@ -3,8 +3,12 @@ import "./Navbar.css";
 import Logo from "../../assets/images/logo.png";
 import SearchIcon from "../../assets/images/icons/search-white.svg";
 import HamburgerMenu from "../../assets/images/icons/burger-menu-white.svg";
-
+import useArtist from "../../context/ArtistContext";
 const Navbar = () => {
+  const { artists } = useArtist();
+
+  console.log(artists.artists.all_artists);
+
   return (
     <div className="navbar-container">
       <div className="navbar-inner-container">
