@@ -1,6 +1,7 @@
 import axios from "axios";
-import { createContext, useEffect } from "react";
+import { createContext, useEffect, useContext, useReducer } from "react";
 import { initialState } from "../reducer/artistReducer";
+import artistReducer from "../reducer/artistReducer";
 
 const ArtistContext = createContext(initialState);
 
@@ -48,3 +49,5 @@ const useArtist = () => {
   }
   return context;
 };
+
+export default useArtist;
