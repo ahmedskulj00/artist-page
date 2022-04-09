@@ -8,34 +8,31 @@ const ArtistContext = createContext(initialState);
 export const ArtistProvider = ({ children }) => {
   const [state, dispatch] = useReducer(artistReducer, initialState);
 
-  useEffect(() => {
-    const getArtist = async (artistId) => {
-      try {
-        const res = await axios.get(`https://run.mocky.io/v3/${artistId}`);
-        dispatch({ type: "GET_ARTIST", payload: res.data });
-      } catch (err) {
-        dispatch({ type: "GET_ARTIST_ERROR", payload: err });
-      }
-    };
+  const getArtist = async (artistId) => {
+    try {
+      const res = await axios.get(`https://run.mocky.io/v3/${artistId}`);
+      dispatch({ type: "GET_ARTIST", payload: res.data });
+    } catch (err) {
+      dispatch({ type: "GET_ARTIST_ERROR", payload: err });
+    }
+  };
 
-    const getArtists = async () => {
-      try {
-        const res = await axios.get(
-          `https://run.mocky.io/v3/3cab6663-7cd8-4365-b8a6-4a1d89305f6a`
-        );
-        dispatch({ type: "GET_ARTISTS", payload: res.data });
-      } catch (err) {
-        dispatch({ type: "GET_ARTISTS_ERROR", payload: err });
-      }
-    };
-
-    getArtist("7c46c4ce-09c0-4f95-b4e1-84ae10bd24ab"); // leaving like this for now until I fix it later
-    getArtists();
-  }, []);
+  const getArtists = async () => {
+    try {
+      const res = await axios.get(
+        `https://run.mocky.io/v3/3cab6663-7cd8-4365-b8a6-4a1d89305f6a`
+      );
+      dispatch({ type: "GET_ARTISTS", payload: res.data });
+    } catch (err) {
+      dispatch({ type: "GET_ARTISTS_ERROR", payload: err });
+    }
+  };
 
   const value = {
     artist: state.artist,
     artists: state.artists,
+    getArtist: getArtist,
+    getArtists: getArtists,
   };
   return (
     <ArtistContext.Provider value={value}>{children}</ArtistContext.Provider>
