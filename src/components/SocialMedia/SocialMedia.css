@@ -16,3 +16,18 @@
   position: relative;
   height: 52px;
 }
+
+@media screen and (max-width: 767px) {
+  .socialmedia_container {
+    margin-bottom: -90px;
+  }
+  .socialmedia_button_container {
+    display: none;
+  }
+  .socialmedia_inner_container {
+    display: block;
+  }
+  .socialmedia_inner_container a {
+    margin-right: 20px;
+  }
+}

@@ -30,3 +30,33 @@
   width: 35%;
   background-color: #efefef;
 }
+
+@media screen and (max-width: 767px) {
+  .artistdetail_container {
+    width: 100vw;
+    height: 100vh;
+  }
+  .artistdetail_innercontainer {
+    width: 100%;
+    flex-direction: column;
+  }
+  .artistdetail_image_container {
+    width: 100%;
+    height: 350px;
+  }
+  .artistdetail_content {
+    width: 100%;
+    flex-direction: column;
+  }
+  .artist_detail {
+    width: 100%;
+  }
+  .artist_detail_inner {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .artistdetail_mostpopular {
+    width: 100%;
+    height: 318px;
+  }
+}

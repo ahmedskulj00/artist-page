@@ -38,3 +38,9 @@
   width: 33px;
   position: relative;
 }
+
+@media screen and (max-width: 767px) {
+  .subgenre_button_container {
+    display: none;
+  }
+}
