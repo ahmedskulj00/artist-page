@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ArtistContent.css";
 import Button from "../Button/Button";
 import Plus from "../../assets/images/icons/plus-white.svg";
+import PopUpModal from "../PopUpModal/PopUpModal";
+import SubGenreVoting from "../SubGenreVoting/SubGenreVoting";
 const ArtistContent = ({ artist }) => {
+  const [hovered, setHovered] = useState(false);
+
   return (
     <div className="artist_content_container">
       <div className="artist_content_inner_container">
@@ -21,12 +25,23 @@ const ArtistContent = ({ artist }) => {
               <p>{subgenre.name}</p>
             </div>
           ))}
-          <Button
-            content={<img src={Plus} width="15px" alt="plus" />}
-            width="30px"
-            height="30px"
-            isPrimary={true}
-          />
+          <div
+            className="subgenre_button_container"
+            onMouseOver={() => setHovered(true)}
+            onMouseLeave={() => setHovered(false)}
+          >
+            <Button
+              content={<img src={Plus} width="15px" alt="plus" />}
+              width="30px"
+              height="30px"
+              isPrimary={true}
+            />
+            {hovered ? (
+              <PopUpModal>
+                <SubGenreVoting />
+              </PopUpModal>
+            ) : null}
+          </div>
         </div>
       </div>
     </div>

@@ -8,6 +8,7 @@ import AddLinks from "../AddLinks/AddLinks";
 
 const SocialMedia = ({ artist }) => {
   const [color, setColor] = useState();
+  const [hovered, setHovered] = useState();
 
   return (
     <div className="socialmedia_container">
@@ -33,7 +34,11 @@ const SocialMedia = ({ artist }) => {
           </a>
         ))}
       </div>
-      <div className="socialmedia_button_container">
+      <div
+        className="socialmedia_button_container"
+        onMouseOver={() => setHovered(true)}
+        onMouseLeave={() => setHovered(false)}
+      >
         <Button
           content={<img src={Plus} width="15px" alt="plus" />}
           width="30px"
@@ -41,9 +46,11 @@ const SocialMedia = ({ artist }) => {
           isPrimary={true}
           id="plus_button"
         />
-        <PopUpModal>
-          <AddLinks />
-        </PopUpModal>
+        {hovered ? (
+          <PopUpModal>
+            <AddLinks />
+          </PopUpModal>
+        ) : null}
       </div>
     </div>
   );
