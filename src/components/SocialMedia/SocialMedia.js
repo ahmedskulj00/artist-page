@@ -36,6 +36,7 @@ const SocialMedia = ({ artist }) => {
         width="30px"
         height="30px"
         isPrimary={true}
+        id="plus_button"
       />
     </div>
   );

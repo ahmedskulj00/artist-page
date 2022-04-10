@@ -9,3 +9,6 @@
   grid-template-columns: repeat(10, 1fr);
   grid-gap: 20px;
 }
+#plus_button {
+  margin-top: 20px;
+}
