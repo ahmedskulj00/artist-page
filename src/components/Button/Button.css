@@ -7,9 +7,12 @@
   border: none;
   outline: none;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.main_button {
+.primary_button {
   background-color: #000;
   color: #fff;
 }
