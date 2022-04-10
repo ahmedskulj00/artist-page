@@ -7,6 +7,7 @@ import ArtistImage from "../../components/ArtistImage/ArtistImage";
 import ArtistName from "../../components/ArtistName/ArtistName";
 import ArtistFollow from "../../components/ArtistFollow/ArtistFollow";
 import ArtistContent from "../../components/ArtistContent/ArtistContent";
+import SocialMedia from "../../components/SocialMedia/SocialMedia";
 
 const ArtistDetail = () => {
   const { artist, getArtist } = useArtist();
@@ -29,6 +30,7 @@ const ArtistDetail = () => {
               <ArtistName artist={artist} />
               <ArtistFollow />
               <ArtistContent artist={artist} />
+              <SocialMedia artist={artist} />
             </div>
           </div>
           <div className="artistdetail_mostpopular"></div>

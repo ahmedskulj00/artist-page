@@ -1,7 +1,7 @@
 import React from "react";
 import "./SocialMedia.css";
 
-const SocialMedia = () => {
+const SocialMedia = ({ artist }) => {
   return <div>SocialMedia</div>;
 };
 

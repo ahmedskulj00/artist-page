@@ -22,7 +22,7 @@ const ArtistContent = ({ artist }) => {
             </div>
           ))}
           <Button
-            content={<img src={Plus} width="15px" />}
+            content={<img src={Plus} width="15px" alt="plus" />}
             width="30px"
             height="30px"
             isPrimary={true}
