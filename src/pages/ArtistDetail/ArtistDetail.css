@@ -34,3 +34,28 @@
   width: 35%;
   background-color: #efefef;
 }
+.artist_detail_name_container {
+  display: flex;
+  align-items: center;
+}
+.artist_detail_name {
+  font-size: 3.5rem;
+  overflow: visible;
+  word-break: break-word;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-family: "SuisseIntl-Regular";
+  margin-right: 10px;
+}
+.subgenre_container {
+  width: 30px;
+  height: 30px;
+  background-image: url("../../assets/images/icons/checkbox-claim.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 5px;
+}
+.trending_icon {
+  width: 30px;
+  height: 30px;
+}
