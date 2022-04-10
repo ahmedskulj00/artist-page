@@ -18,13 +18,13 @@ const Navbar = () => {
         <div className="navbar-left-side">
           <div className="navbar-logo">
             <img src={Logo} alt="logo" className="logo" />
-            <div className="artists-links">
-              {artists?.all_artists?.map((artist) => (
-                <Link key={artist.artist_uuid} to={`/${artist.artist_uuid}`}>
-                  {artist.artist_name}
-                </Link>
-              ))}
-            </div>
+          </div>
+          <div className="artists-links">
+            {artists?.all_artists?.map((artist) => (
+              <Link key={artist.artist_uuid} to={`/${artist.artist_uuid}`}>
+                {artist.artist_name}
+              </Link>
+            ))}
           </div>
         </div>
         <div className="navbar-right-side">
