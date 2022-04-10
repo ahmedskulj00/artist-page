@@ -4,6 +4,7 @@ import Logo from "../../assets/images/logo.png";
 import SearchIcon from "../../assets/images/icons/search-white.svg";
 import HamburgerMenu from "../../assets/images/icons/burger-menu-white.svg";
 import useArtist from "../../context/ArtistContext";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const { artists, getArtists } = useArtist();
 
@@ -19,9 +20,9 @@ const Navbar = () => {
             <img src={Logo} alt="logo" className="logo" />
             <div className="artists-links">
               {artists?.all_artists?.map((artist) => (
-                <p key={artist.artist_uuid} href={`/artist/${artist.id}`}>
+                <Link key={artist.artist_uuid} to={`/${artist.artist_uuid}`}>
                   {artist.artist_name}
-                </p>
+                </Link>
               ))}
             </div>
           </div>
