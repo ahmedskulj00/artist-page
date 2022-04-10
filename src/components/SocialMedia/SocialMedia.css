@@ -1,4 +1,11 @@
 .socialmedia_container {
   display: flex;
   border-top: 2px solid #000;
+  justify-content: space-between;
+}
+.socialmedia_inner_container {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 20px;
 }
