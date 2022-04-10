@@ -22,8 +22,10 @@ const ArtistDetail = () => {
           />
         </div>
         <div className="artistdetail_content">
-          <div className="artist_detail"></div>
-          <div className="aritstdetail_mostpopular"></div>
+          <div className="artist_detail">
+            <div className="artist_detail_inner"></div>
+          </div>
+          <div className="artistdetail_mostpopular"></div>
         </div>
       </div>
     </div>

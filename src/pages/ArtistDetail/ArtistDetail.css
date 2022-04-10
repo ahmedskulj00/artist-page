@@ -16,3 +16,21 @@
   height: 100%;
   object-fit: cover;
 }
+.artistdetail_content {
+  width: 60%;
+  display: flex;
+}
+.artist_detail {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.artist_detail_inner {
+  width: 90%;
+  height: 100%;
+}
+.artistdetail_mostpopular {
+  width: 35%;
+  background-color: #efefef;
+}
