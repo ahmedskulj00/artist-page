@@ -1,4 +1,4 @@
-.subgenre_voting_container {
+.addlinks_container {
   color: #fff;
   font-size: 0.9rem;
   font-weight: 500;
@@ -6,12 +6,12 @@
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
-.subgenre_voting_title_container {
+.addlinks_title_container {
   margin-bottom: 20px;
 }
-.subgenre_voting_content {
+.addlinks_content_container {
   margin-bottom: 20px;
 }
-.subgenre_voting_content p {
+.addlinks_button_container {
   margin-bottom: 20px;
 }

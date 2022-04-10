@@ -12,3 +12,7 @@
 #plus_button {
   margin-top: 20px;
 }
+.socialmedia_button_container {
+  position: relative;
+  height: 52px;
+}

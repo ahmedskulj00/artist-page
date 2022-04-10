@@ -3,6 +3,8 @@ import "./SocialMedia.css";
 import Button from "../Button/Button";
 import Plus from "../../assets/images/icons/plus-white.svg";
 import { mockedIcons } from "../../mocked_data/mockedIcons";
+import PopUpModal from "../PopUpModal/PopUpModal";
+import AddLinks from "../AddLinks/AddLinks";
 
 const SocialMedia = ({ artist }) => {
   const [color, setColor] = useState();
@@ -31,13 +33,18 @@ const SocialMedia = ({ artist }) => {
           </a>
         ))}
       </div>
-      <Button
-        content={<img src={Plus} width="15px" alt="plus" />}
-        width="30px"
-        height="30px"
-        isPrimary={true}
-        id="plus_button"
-      />
+      <div className="socialmedia_button_container">
+        <Button
+          content={<img src={Plus} width="15px" alt="plus" />}
+          width="30px"
+          height="30px"
+          isPrimary={true}
+          id="plus_button"
+        />
+        <PopUpModal>
+          <AddLinks />
+        </PopUpModal>
+      </div>
     </div>
   );
 };
