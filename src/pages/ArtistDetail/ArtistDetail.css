@@ -20,6 +20,7 @@
   height: 100%;
   display: flex;
   justify-content: center;
+  margin-top: 70px;
 }
 .artist_detail_inner {
   width: 90%;

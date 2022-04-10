@@ -1,5 +1,6 @@
 .buttons_container {
   display: flex;
+  margin-bottom: 20px;
 }
 .follow_button_container {
   display: flex;

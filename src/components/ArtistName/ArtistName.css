@@ -1,6 +1,7 @@
 .artist_detail_name_container {
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
 }
 .artist_detail_name {
   font-size: 3.5rem;
