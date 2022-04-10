@@ -13,7 +13,7 @@ const SubGenreVoting = () => {
           vote for existing to get yours on top!
         </p>
         <div className="subgenre_voting_bars"></div>
-        <div className="subgenre_button_container">
+        <div className="subgenre_voting_button_container">
           <Button
             content="Vote now"
             isPrimary={true}
