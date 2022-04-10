@@ -35,7 +35,7 @@ const ArtistDetail = () => {
             </div>
           </div>
           <div className="artistdetail_mostpopular">
-            <ArtistMostPopular />
+            <ArtistMostPopular artist={artist} />
           </div>
         </div>
       </div>

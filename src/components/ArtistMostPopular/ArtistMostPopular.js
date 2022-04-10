@@ -1,8 +1,8 @@
 import React from "react";
 import "./ArtistMostPopular.css";
-import { ResponsiveLine } from "@nivo/line";
-const ArtistMostPopular = () => {
-  return <div></div>;
+
+const ArtistMostPopular = ({ artist }) => {
+  return <div className="mostpopular_container"></div>;
 };
 
 export default ArtistMostPopular;
