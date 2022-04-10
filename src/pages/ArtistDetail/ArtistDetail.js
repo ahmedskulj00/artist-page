@@ -6,6 +6,8 @@ import Button from "../../components/Button/Button";
 import ArtistImage from "../../components/ArtistImage/ArtistImage";
 import ArtistName from "../../components/ArtistName/ArtistName";
 import ArtistFollow from "../../components/ArtistFollow/ArtistFollow";
+import ArtistContent from "../../components/ArtistContent/ArtistContent";
+
 const ArtistDetail = () => {
   const { artist, getArtist } = useArtist();
   const { artist_uuid } = useParams();
@@ -26,6 +28,7 @@ const ArtistDetail = () => {
               <Button content="Booking request" width="217px" height="37px" />
               <ArtistName artist={artist} />
               <ArtistFollow />
+              <ArtistContent artist={artist} />
             </div>
           </div>
           <div className="artistdetail_mostpopular"></div>
