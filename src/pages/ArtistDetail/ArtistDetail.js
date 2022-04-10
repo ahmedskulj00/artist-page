@@ -6,6 +6,7 @@ import Button from "../../components/Button/Button";
 import TrendingIcon from "../../assets/images/icons/hot.svg";
 import Heart from "../../assets/images/icons/heart-white.svg";
 import ShareWhite from "../../assets/images/icons/share-white.svg";
+import ArtistImage from "../../components/ArtistImage/ArtistImage";
 const ArtistDetail = () => {
   const { artist, getArtist } = useArtist();
   const { artist_uuid } = useParams();
@@ -18,11 +19,7 @@ const ArtistDetail = () => {
     <div className="artistdetail_container">
       <div className="artistdetail_innercontainer">
         <div className="artistdetail_image_container">
-          <img
-            src={artist?.data?.image}
-            className="artist_image"
-            alt="artist_image"
-          />
+          <ArtistImage source={artist?.data?.image} />
         </div>
         <div className="artistdetail_content">
           <div className="artist_detail">
