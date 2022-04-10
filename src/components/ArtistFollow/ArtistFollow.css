@@ -1,0 +1,16 @@
+.buttons_container {
+  display: flex;
+}
+.follow_button_container {
+  display: flex;
+  margin-right: 20px;
+}
+.follow_button_container button {
+  margin-right: 2px;
+}
+.follow_button_container:hover .heart_icon {
+  transform: scale(1.2);
+}
+#share_button:hover .share_icon {
+  transform: scale(1.2);
+}
