@@ -1,0 +1,11 @@
+.subgenre_voting_container {
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-family: "SuisseIntl-Regular";
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+}
+.subgenre_voting_title_container {
+  margin-bottom: 20px;
+}
