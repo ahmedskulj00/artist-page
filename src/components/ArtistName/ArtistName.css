@@ -25,3 +25,37 @@
   width: 30px;
   height: 30px;
 }
+
+@media screen and (max-width: 767px) {
+  .artist_detail_name {
+    font-size: 2.1rem;
+    margin-top: 10px;
+  }
+  .subgenre_container {
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+  }
+  .trending_icon {
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .artist_detail_name {
+    font-size: 2.1rem;
+    margin-top: 10px;
+  }
+  .subgenre_container {
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+  }
+  .trending_icon {
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+  }
+}

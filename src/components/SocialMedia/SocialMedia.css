@@ -31,3 +31,15 @@
     margin-right: 20px;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1119px) {
+  .socialmedia_container {
+    margin-bottom: -90px;
+  }
+  .socialmedia_inner_container {
+    display: block;
+  }
+  .socialmedia_inner_container a {
+    margin-right: 20px;
+  }
+}
