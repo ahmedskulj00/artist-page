@@ -43,7 +43,7 @@ const ArtistMostPopular = ({ artist }) => {
         axisTop={null}
         axisLeft={{
           tickSize: 0,
-          tickPadding: 5,
+          tickPadding: 0,
         }}
         enableLabel={false}
         isInteractive={false}

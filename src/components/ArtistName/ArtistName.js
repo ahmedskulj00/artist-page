@@ -17,7 +17,7 @@ const ArtistName = ({ artist }) => {
         >
           {hovered ? (
             <PopUpModal>
-              <SubGenreVoting />
+              <SubGenreVoting artist={artist} />
             </PopUpModal>
           ) : null}
         </div>

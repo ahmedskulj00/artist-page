@@ -15,3 +15,6 @@
 .subgenre_voting_content p {
   margin-bottom: 20px;
 }
+.subgenre_voting_bars {
+  height: 200px;
+}
