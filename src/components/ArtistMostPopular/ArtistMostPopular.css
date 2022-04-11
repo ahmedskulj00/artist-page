@@ -1,3 +1,23 @@
 .mostpopular_container {
-  height: 20%;
+  height: 50%;
+}
+.mostpopular_title {
+  font-size: 1rem;
+  color: #707580;
+  letter-spacing: 2px;
+  font-family: "SuisseIntl-Regular";
+  margin-bottom: -50px;
+  text-align: left;
+  margin-left: 30px;
+}
+text {
+  font-family: "SuisseIntl-Regular" !important;
+  transform: translate(70px, -20px);
+  font-size: 0.8rem !important;
+}
+@media screen and (max-width: 767px) {
+  .mostpopular_container {
+    margin-top: 30px;
+    height: 318px;
+  }
 }

@@ -29,6 +29,8 @@
 .artistdetail_mostpopular {
   width: 35%;
   background-color: #efefef;
+  display: flex;
+  align-items: flex-end;
 }
 
 @media screen and (max-width: 767px) {
@@ -58,6 +60,8 @@
   .artistdetail_mostpopular {
     width: 100%;
     height: 318px;
+    margin-top: 100px;
+    align-items: flex-start;
   }
 }
 
@@ -85,7 +89,7 @@
     margin: 0 auto;
   }
   .artistdetail_mostpopular {
-    width: 100%;
+    width: 70%;
     margin-bottom: -90px;
   }
 }
